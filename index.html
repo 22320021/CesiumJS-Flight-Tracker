@@ -29,7 +29,7 @@
     viewer.scene.primitives.add(osmBuildings);
 
     // ===== Step 4/5: flightData を外部JSON（flightData.json）から読み込み =====
-    const flightData = await (await fetch("./flightData.json")).json();
+    const flightData = await (await fetch("/flightData.json")).json();
 
     // ===== Step 5: 時間設定（公式と同じ仮定：30秒刻み） =====
     const timeStepInSeconds = 30;
